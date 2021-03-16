@@ -4,7 +4,19 @@ import { PageHero } from '../components'
 import aboutImg from '../assets/hero-bcg.jpeg'
 
 const AboutPage = () => {
-  return <h4>about page</h4>
+  return  <main>
+    <PageHero title="about"/>
+    <Wrapper className="page section section-center">
+    <img src={aboutImg} alt="nice desk" />
+    <article>
+      <div className="title">
+        <h2>our story</h2>
+        <div className="underline"></div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra justo at gravida gravida. Nunc blandit vestibulum quam. Mauris sed sapien faucibus elit hendrerit scelerisque. Proin et sapien a libero bibendum facilisis vitae id lectus. Donec non sodales metus. Etiam rhoncus nunc elementum rutrum aliquam. Etiam vitae nibh ultricies, rhoncus purus eget, porta velit. Donec a venenatis erat. Cras ut rutrum neque. Aliquam erat volutpat.</p>
+      </div>
+    </article>
+    </Wrapper>
+  </main>
 }
 
 const Wrapper = styled.section`
